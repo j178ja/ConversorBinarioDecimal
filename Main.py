@@ -5,6 +5,8 @@ Este archivo es el punto de entrada del conversor.
 Muestra un menú de opciones y llama a las funciones correspondientes.
 """
 
+from Validaciones.Validador import pedir_opcion # se importa de la carpeta validaciones el archivo validador la función pedir_opcion para poder verificar la entrada del usuario
+
 def decimal_a_binario():
     """Convierte un número decimal a binario.""" # comentarios para docstring se ven reflejados en archivo Documentacion.md
     print("Convertir de decimal a binario")
@@ -31,20 +33,15 @@ def main():
         "2": binario_a_decimal,
         "3": salir
     }
-
     while True:
-        print("\n--- CONVERSOR DE NÚMEROS ---")
-        print("1. Decimal a Binario")
-        print("2. Binario a Decimal")
-        print("3. Salir")
+            print("\n--- CONVERSOR DE NÚMEROS ---")
+            print("1. Decimal a Binario")
+            print("2. Binario a Decimal")
+            print("3. Salir")
 
-        opcion = input("Selecciona una opción: ")
+            opcion = pedir_opcion(list(opciones.keys()))  # 
+            opciones[opcion]()  # Ejecuta la función correspondiente
 
-        accion = opciones.get(opcion)
-        if accion:
-            accion()
-        else:
-            print(" Opción no válida.")
 
 if __name__ == "__main__":
     main()
