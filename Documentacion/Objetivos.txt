@@ -1,0 +1,24 @@
+
+
+TP INTEGRADOR
+ 
+TEMA ELEGIDO : "Conversión de Números"
+
+OBJETIVO:
+Desarrollar un programa que convierta números decimales a binarios y, de forma opcional, también de binario a decimal.
+Extensión: Validar la entrada y mostrar mensajes de error ante datos incorrectos.
+
+
+
+OBSERVACIONES:
+
+En primer instancia y con el fin de cumplir con los criterios del trabajo integrador 
+se creará una APLICACION DE CONSOLA en Python que tenga un switch para elegir entre las dos conversiones.
+Mostrando al operador la opcion de conversion DECIMAL A BINARIO y BINARIO A DECIMAL. Asi como la opcion de salida.
+
+Lo que me  gustaria lograr a posteriori es crear un gadget de escritorio  que permita :
+
+la conversion de DECIMAL A BINARIO y BINARIO A DECIMAL
+asi como tambien las conversiones correspondientes a BASE 8 y BASE 16
+
+No obstante para lograr eso habrá que superar la barrera de la interfaz grafica  con python.

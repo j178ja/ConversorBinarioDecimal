@@ -22,10 +22,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ConversorBinarioDecimal.py" />
+    <Compile Include="Conversores\binario.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Conversores\decimal.py" />
+    <Compile Include="Conversores\__init__.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignre" />
-    <Content Include="Objetivos.txt" />
+    <Content Include=".gitignore" />
+    <Content Include="Documentacion\Documentacion.md" />
+    <Content Include="Documentacion\Objetivos.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Conversores\" />
+    <Folder Include="Documentacion\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
