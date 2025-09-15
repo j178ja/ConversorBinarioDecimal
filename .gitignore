@@ -1,0 +1,40 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de build
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+
+# Configuración de entornos virtuales
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Archivos temporales
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Archivos de JetBrains si los tuvieras
+.idea/
+
+# Otros archivos de sistema
+Thumbs.db
+desktop.ini
