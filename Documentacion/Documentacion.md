@@ -13,4 +13,8 @@
 8. se Agrega en Documentacion el archivo Objetivos.txt donde consta tema elegido y objetivo a  lograr
 9. Se pretende usar docstrings para documentar el proyectox por lo que se instala la correspondiente extension
 
+
+# creacion de los modulos
+10. Se crea el archivo de inicio Main.py que muestra swich de opciones y llama a los modulos correspondientes
+ 
   
