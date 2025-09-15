@@ -28,6 +28,7 @@ def main():
     - Llama a la función correspondiente según la elección.
     - Permite salir del programa.
     """
+    # Diccionario que mapea opciones a funciones
     opciones = {
         "1": decimal_a_binario,
         "2": binario_a_decimal,
@@ -39,7 +40,7 @@ def main():
             print("2. Binario a Decimal")
             print("3. Salir")
 
-            opcion = pedir_opcion(list(opciones.keys()))  # 
+            opcion = pedir_opcion(list(opciones.keys()))  # Llama a la función para pedir opción válida
             opciones[opcion]()  # Ejecuta la función correspondiente
 
 

@@ -16,5 +16,6 @@
 
 # creacion de los modulos
 10. Se crea el archivo de inicio Main.py que muestra swich de opciones y llama a los modulos correspondientes
- 
+11. Se crea carpeta Validador para contener el modulo de validacion
+12. Se crea el archivo Validador.py .Es el primer vosquejo para filtrar caracteres invalidos en el ingreso # hay que mejorarlo para que directamente ignore los incorrectos en el keypress
   
