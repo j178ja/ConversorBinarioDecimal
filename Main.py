@@ -4,7 +4,7 @@ Main.py
 Este archivo es el punto de entrada del conversor.
 Muestra un menú de opciones y llama a las funciones correspondientes.
 """
-from Conversores import binario, decimal # se importan las funciones de los archivos binario.py y decimal.py de la carpeta conversores
+from Conversores import ConvertAbinario, ConvertAdecimal # se importan las funciones de los archivos binario.py y decimal.py de la carpeta conversores
 from Validaciones.Validador import pedir_opcion # se importa de la carpeta validaciones el archivo validador la función pedir_opcion para poder verificar la entrada del usuario
 
 def decimal_a_binario():

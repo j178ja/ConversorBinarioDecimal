@@ -22,10 +22,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.py" />
-    <Compile Include="Conversores\binario.py">
+    <Compile Include="Conversores\ConvertAbinario.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Conversores\decimal.py" />
+    <Compile Include="Conversores\ConvertAdecimal.py" />
     <Compile Include="Conversores\__init__.py" />
     <Compile Include="Validaciones\Validador.py">
       <SubType>Code</SubType>

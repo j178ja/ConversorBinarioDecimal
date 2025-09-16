@@ -1,3 +1,5 @@
+"""Convierte un número decimal a binario."""
+
 
 def decimal_a_binario(numero):
     if numero == 0:
