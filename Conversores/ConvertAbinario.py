@@ -4,7 +4,7 @@
 
 from Formato.finalizacion import salir # se importa la función salir del archivo finalizacion.py de la carpeta formato
 from Formato.menu import MARGEN # se importa la variable margen del archivo menu.py de la carpeta formato
-from Formato.clear import limpiar_pantalla # importa la función para limpiar contenido de pantalla
+
 
 def es_decimal(cadena: str) -> bool:
     """Verifica si una cadena representa un numero decimal (entero positivo)."""

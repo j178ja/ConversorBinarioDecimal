@@ -16,6 +16,15 @@
 
 # creacion de los modulos
 10. Se crea el archivo de inicio Main.py que muestra swich de opciones y llama a los modulos correspondientes
-11. Se crea carpeta Validador para contener el modulo de validacion
+11. Se crea carpeta Validador para contener el modulo de validacion y seleccion de opcion
 12. Se crea el archivo Validador.py .Es el primer vosquejo para filtrar caracteres invalidos en el ingreso # hay que mejorarlo para que directamente ignore los incorrectos en el keypress
-  
+13. Se crea carpeta formato que contiene config con variables a emplear en el proyecto 
+14. se crea archivo Clear con las funciones de limpieza de pantalla 
+15. Se crea archivo finalizacion con la funcion  para salir de programa y pausa hasta presion de nueva tecla
+16. se crea archivo menu con las funcones que muestran la estetica delimitada con los caracteres de config
+17. Se crea carpeta Conversores para contener los modulos de conversion
+18. se crea el archivo BinarioDecimal con la funcion que convierte de binario a decimal
+19. se crea el archivo DecimalBinario con la funcion que convierte de decimal a binario
+20. se hacen los debidos commit y push al repositorio remoto
+21. se prueba y testea el proyecto
+

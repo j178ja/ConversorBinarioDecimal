@@ -2,7 +2,7 @@
 
 TP INTEGRADOR
  
-TEMA ELEGIDO : "Conversión de Números"
+TEMA ELEGIDO : "Conversión de Numeros"
 
 OBJETIVO:
 Desarrollar un programa que convierta números decimales a binarios y, de forma opcional, también de binario a decimal.

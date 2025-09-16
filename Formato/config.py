@@ -1,8 +1,8 @@
 ﻿# -*- coding: utf-8 -*-
 
 """
-Archivo de configuración global.
-Contiene constantes y parámetros usados en toda la aplicación.
+Archivo de configuracion global.
+Contiene constantes y parámetros usados en toda la aplicacion.
 """
 
 from pyfiglet import Figlet # importa la librería pyfiglet para mostrar texto en ASCII art

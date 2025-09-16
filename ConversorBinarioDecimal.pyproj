@@ -23,6 +23,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Documentacion\EstractorStrings.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Formato\clear.py">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,7 @@
     <Content Include=".gitignore" />
     <Content Include="Documentacion\Diagrama de flujo.png" />
     <Content Include="Documentacion\Documentacion.md" />
+    <Content Include="Documentacion\DocumentacionProyecto.md" />
     <Content Include="Documentacion\Objetivos.txt" />
   </ItemGroup>
   <ItemGroup>
