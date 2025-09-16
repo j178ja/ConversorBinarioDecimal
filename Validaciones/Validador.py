@@ -1,4 +1,6 @@
-﻿
+﻿# -*- coding: utf-8 -*-
+
+"""Valida entradas del usuario."""
 def pedir_opcion(validas):
     """
     Solicita al usuario una opción válida de la lista.

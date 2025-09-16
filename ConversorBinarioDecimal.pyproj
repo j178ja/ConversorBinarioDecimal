@@ -2,10 +2,9 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-	  <CodePage>65001</CodePage>
-	  <!-- 65001 es UTF-8 -->
-
-	  <ProjectGuid>ef830b75-3887-42a3-8048-bdb2972ca1dc</ProjectGuid>
+    <CodePage>65001</CodePage>
+    <!-- 65001 es UTF-8 -->
+    <ProjectGuid>ef830b75-3887-42a3-8048-bdb2972ca1dc</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>Main.py</StartupFile>
     <SearchPath>
@@ -24,6 +23,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Formato\clear.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Formato\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Formato\finalizacion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Formato\menu.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Main.py" />
     <Compile Include="Conversores\ConvertAbinario.py">
       <SubType>Code</SubType>
@@ -39,12 +50,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="Documentacion\Diagrama de flujo.png" />
     <Content Include="Documentacion\Documentacion.md" />
     <Content Include="Documentacion\Objetivos.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Conversores\" />
     <Folder Include="Documentacion\" />
+    <Folder Include="Formato\" />
     <Folder Include="Validaciones\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
