@@ -1,5 +1,7 @@
 ﻿# -*- coding: utf-8 -*-
 
+from Formato.config import MARGEN   
+
 """Valida entradas del usuario."""
 def pedir_opcion(validas):
     """
@@ -13,7 +15,7 @@ def pedir_opcion(validas):
         str: La opción elegida.
     """
     while True:
-        opcion = input("Selecciona una opción: ").strip()
+        opcion =input(" " * int(MARGEN / 4) + "Selecciona una opción: ").strip() # se agrega espacio x el margen establecido /4 para que sea apenas una sangria
         if opcion in validas:
             return opcion
         else:

@@ -10,8 +10,11 @@ from pyfiglet import Figlet # importa la librería pyfiglet para mostrar texto e
 
 # Dimensiones y estilo
 MARGEN = 15
-HEIGHT = 10
-WIDTH = 40
-CARACTER_HORIZONTAL = "─"
-CARACTER_VERTICAL = "│"
-f = Figlet(font='digital')  #tipo dde fuente ASCII art
+HEIGHT = 5
+WIDTH = 50                       # ancho del recuadro del menu
+CARACTER_HORIZONTAL = "─"        # empleado para el recuadro horizontal interno de la app
+CARACTER_VERTICAL = "│"          # empleado para el recuadro vertical interno de la app
+CARACTER_UNION = "+"             # emleado para las esquinas del recuadro externo de la app
+CARACTER_DOBLE_VERTICAL = "││"   # emleado para el recuadro vertical externo de la app
+CARACTER_DOBLE_HORIZONTAL = "═"  # emleado para el recuadro horizontal externo de la app
+f = Figlet(font='digital')       #tipo dde fuente ASCII art

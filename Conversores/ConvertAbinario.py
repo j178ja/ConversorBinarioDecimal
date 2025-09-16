@@ -4,7 +4,7 @@
 
 from Formato.finalizacion import salir # se importa la función salir del archivo finalizacion.py de la carpeta formato
 from Formato.menu import MARGEN # se importa la variable margen del archivo menu.py de la carpeta formato
-
+from Formato.clear import limpiar_pantalla # importa la función para limpiar contenido de pantalla
 
 def es_decimal(cadena: str) -> bool:
     """Verifica si una cadena representa un numero decimal (entero positivo)."""
@@ -13,7 +13,8 @@ def es_decimal(cadena: str) -> bool:
 def decimal_a_binario():
     """Convierte un numero decimal a binario.""" 
     print("\nConvertir de DECIMAL a BINARIO ( Presione * para salir)")
-    valor = input(" " * MARGEN + "\nIngrese un valor DECIMAL: ")
+    valor = input(" " * (MARGEN // 2) + "\nIngrese un valor DECIMAL: ")
+
     # Verificar si el usuario desea salir
     if valor == "*":
        salir() #llama a la función salir para finalizar el programa
@@ -27,4 +28,4 @@ def decimal_a_binario():
     # convertir a binario y mostrar resultado
     binario = bin(valor)[2:]  # [2:] elimina el prefijo '0b' que agrega Python
     print(" " * MARGEN + f"\nEl numero decimal {valor} en binario es: {binario}")
-
+  
