@@ -1,15 +1,15 @@
-"""Convierte un número decimal a binario."""
+# """Convierte un número decimal a binario."""
 
 
-def decimal_a_binario(numero):
-    if numero == 0:
-        return "0"
+# def decimal_a_binario(numero):
+#     if numero == 0:
+#         return "0"
     
-    binario = ""
-    while numero > 0:
-        residuo = numero % 2
-        binario = str(residuo) + binario
-        numero = numero // 2
-    return binario
+#     binario = ""
+#     while numero > 0:
+#         residuo = numero % 2
+#         binario = str(residuo) + binario
+#         numero = numero // 2
+#     return binario
 
 
