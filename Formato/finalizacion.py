@@ -4,10 +4,10 @@
 
 import time
 import sys
-from config import MARGEN  # importa la constante MARGEN del archivo config.py
+from Formato.config import MARGEN  # importa la constante MARGEN del archivo config.py
 
 def salir() -> None:
-    """Finaliza la ejecución del programa con una animación."""
+    """Finaliza la ejecucion del programa con una animacion."""
     mensaje = "Saliendo del programa"
     print(" " * MARGEN + mensaje, end="", flush=True)
     for _ in range(3):

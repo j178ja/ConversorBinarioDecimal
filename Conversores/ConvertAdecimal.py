@@ -7,11 +7,11 @@ from Formato.menu import MARGEN # se importa la variable margen del archivo menu
 
 
 def es_binario(cadena: str) -> bool:  #se establece una bandera para verificar si el numero es binario
-    """Verifica si una cadena representa un número binario."""
+    """Verifica si una cadena representa un numero binario."""
     return set(cadena).issubset({"0", "1"})# verifica que los componentes de la cadena sean 0 o 1 (números binarios))
 
 def binario_a_decimal():
-    """Convierte un número binario a decimal."""
+    """Convierte un numero binario a decimal."""
     print(" " * MARGEN + "\nConvertir de BINARIO a DECIMAL ( Presione * para salir)")
     valor = input(" " * MARGEN + "\nIngrese un valor BINARIO: ")
     # Verificar si el usuario desea salir
@@ -19,8 +19,8 @@ def binario_a_decimal():
        salir() #llama a la función salir para finalizar el programa
      
     if not es_binario(valor): # se llama a la bandera que verifica si el valor es binario, si no lo es, muestra el mensaje de error
-        print(" " * MARGEN + "\nError: El valor ingresado no es un número binario.")
+        print(" " * MARGEN + "\nError: El valor ingresado no es un numero binario.")
         return
 
     decimal = int(valor, 2)
-    print(" " * MARGEN + f"\nEl número binario {valor} equivale a {decimal} en decimal.")
+    print(" " * MARGEN + f"\nEl numero binario {valor} equivale a {decimal} en decimal.")

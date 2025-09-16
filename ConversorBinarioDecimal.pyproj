@@ -35,6 +35,9 @@
     <Compile Include="Formato\menu.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Formato\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Main.py" />
     <Compile Include="Conversores\ConvertAbinario.py">
       <SubType>Code</SubType>

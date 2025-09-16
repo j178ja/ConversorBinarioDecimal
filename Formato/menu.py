@@ -3,22 +3,21 @@
 
 """ Da formato a menu de aplicacion"""
 
-from config import MARGEN # importa la constante MARGEN del archivo config.py
-from clear import limpiar_pantalla # importa la función para limpiar contenido de pantalla
-from pyfiglet import Figlet # importa la librería pyfiglet para mostrar texto en ASCII art
-from config import f  # importa la instancia de Figlet desde config.py
+from Formato.config import MARGEN # importa la constante MARGEN del archivo config.py
+from Formato.clear import limpiar_pantalla # importa la función para limpiar contenido de pantalla
+from Formato.config import f  # importa la instancia de Figlet desde config.py
 
 def imprimir_centrada_lineas(texto, ancho=50):
     """
-    Imprime varias líneas centradas.
+    Imprime varias lineas centradas.
     """
     for linea in texto.splitlines():
         print(linea.center(ancho))
 
 def imprimir_lineaVertical(texto="", ancho=70):
     """
-    Imprime una línea con bordes '|' a los lados.
-    - texto: contenido de la línea
+    Imprime una linea con bordes '|' a los lados.
+    - texto: contenido de la linea
     - ancho: ancho total del recuadro
     """
     contenido = texto.ljust(ancho - 2)  # deja espacio para los bordes
@@ -27,7 +26,7 @@ def imprimir_lineaVertical(texto="", ancho=70):
 
 def mostrar_menu(ancho=70, MARGEN=15, height=20):
     limpiar_pantalla()  # borra todo lo anterior
-    titulo = f.renderText("CONVERSOR DE NÚMEROS").splitlines()
+    titulo = f.renderText("CONVERSOR DE NUMEROS").splitlines()
 
     # Línea superior
     print("+" + "-" * (ancho - 2) + "+")
