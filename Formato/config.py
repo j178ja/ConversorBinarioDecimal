@@ -18,3 +18,4 @@ CARACTER_UNION = "+"             # emleado para las esquinas del recuadro extern
 CARACTER_DOBLE_VERTICAL = "││"   # emleado para el recuadro vertical externo de la app
 CARACTER_DOBLE_HORIZONTAL = "═"  # emleado para el recuadro horizontal externo de la app
 f = Figlet(font='digital')       #tipo dde fuente ASCII art
+VUELTA_A_SELECTOR = 4            # lineas que se deben borrar para volver al selector de opciones

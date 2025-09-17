@@ -20,7 +20,7 @@ def imprimir_lineaVertical(texto="", ancho=70):
     - texto: contenido de la linea
     - ancho: ancho total del recuadro
     """
-    contenido = texto.ljust(WIDTH - 2)  # deja espacio para los bordes
+    contenido = texto.ljust(ancho - 2)  # deja espacio para los bordes
     print(CARACTER_VERTICAL + contenido + CARACTER_VERTICAL)
 
 
@@ -32,16 +32,19 @@ def mostrar_menu():
     print(CARACTER_UNION + CARACTER_HORIZONTAL * (WIDTH - 2) + CARACTER_UNION)
 
     # Altura disponible
-    contenido = []
+    contenido = [] # Lista para almacenar las opciones a mostrar
+    
 
     # Agregar título centrado
     for linea in titulo:
-        contenido.append(linea.center(WIDTH - 2))
+        contenido.append(linea.center(WIDTH - 2)) 
 
     # Agregar espacio antes de opciones
     contenido.append("")
 
-    # Opciones
+    # Opciones                          
+    #   MUESTRA EN EL MENU LAS OPCIONES SEPARADAS POR ESA DISTANCIA PARA QUE TODAS APAREZCAN IGUALES (el centrado no respetaria el margen izquierdo)
+    # Se las agrega a la lista Contenido
     contenido.append(" " * MARGEN + "1. Decimal a Binario")
     contenido.append(" " * MARGEN + "2. Binario a Decimal")
     contenido.append(" " * MARGEN + "*. Salir")
@@ -52,8 +55,8 @@ def mostrar_menu():
 
     # Imprimir cada línea con borde lateral
     for linea in contenido:
-        imprimir_lineaVertical(linea, WIDTH)
+        imprimir_lineaVertical(linea, ancho=WIDTH)
 
     # Línea inferior
-    print(CARACTER_UNION + CARACTER_HORIZONTAL  * (WIDTH - 2) + CARACTER_UNION)
+    print(CARACTER_UNION + CARACTER_HORIZONTAL  * (WIDTH - 2) + CARACTER_UNION) # Se emplean las variables guardadas en config.py para dar formato al menu
     
