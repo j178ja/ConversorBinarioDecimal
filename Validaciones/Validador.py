@@ -1,6 +1,6 @@
 ﻿# -*- coding: utf-8 -*-
 
-from Formato.clear import limpiar_pantalla, limpiar_resultado, pausar_tecla
+from Formato.clear import  limpiar_resultado, pausar_tecla
 from Formato.config import MARGEN , VUELTA_A_SELECTOR   
 
 """Valida entradas del usuario."""
@@ -21,6 +21,6 @@ def pedir_opcion(validas):
             return opcion
         else:
             print(f" Entrada invalida. Opciones validas: {', '.join(validas)}") # Muestra las opciones válidas si la entrada es incorrecta
-            altura_resultado = VUELTA_A_SELECTOR
+            retorno_carro = VUELTA_A_SELECTOR
             pausar_tecla()
-            limpiar_resultado(altura_resultado)
+            limpiar_resultado(retorno_carro)
